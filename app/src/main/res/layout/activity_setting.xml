@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting">
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="575dp"
+        android:text="Ambil Foto"
+        android:textColor="#000000"></Button>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/btn_capture"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ic_baseline_camera_alt_24"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="250dp"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextStreet"
+            android:layout_alignLeft="@+id/editTextStreet"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"></EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextName"
+            android:layout_alignParentLeft="true"
+            android:text="Nama"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        <Button
+            android:id="@+id/btn_save_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Simpan"
+            android:textColor="#000000"
+            android:layout_marginBottom="-7dp"
+            android:layout_alignParentBottom="true">
+        </Button>
+        <Button
+            android:id="@+id/btn_view_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="190dp"
+            android:layout_marginBottom="-7dp"
+            android:text="Tampilkan"
+            android:textColor="#000000"></Button>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignBottom="@+id/editTextEmail"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignBottom="@+id/editTextPhone"
+            android:text="No.Telp"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextEmail"
+            android:layout_alignLeft="@+id/textView5"
+            android:text="Alamat"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="text"></EditText>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextCity"
+            android:layout_alignBottom="@+id/editTextCity"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/editTextEmail"
+            android:text="Negara"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        <EditText
+            android:id="@+id/editTextStreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_alignLeft="@+id/editTextName"
+            android:ems="10"
+            android:inputType="text"></EditText>
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextName"
+            android:layout_alignLeft="@+id/editTextStreet"
+            android:ems="10"
+            android:inputType="phone|text"></EditText>
+
+    </RelativeLayout>
+
+</RelativeLayout>
